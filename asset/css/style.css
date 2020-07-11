@@ -1,0 +1,370 @@
+@font-face{
+	font-family: "Montserrat";
+	src: url('fonts/Montserrat-Regular.ttf') format('truetype'); 
+}
+
+:root {
+  --primary-color: #FF971E;
+  /* --secondary-color: ;
+  --light-color: ; */
+  --dark-color: #ffffff;
+  --light-dark-color: #000000;
+}
+
+* {
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--light-dark-color);
+  background: white;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+}
+h3 {
+  font-weight: bolder;
+}
+
+/* Nav Section */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Utilities */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.dark-gray {
+  background: var(--dark-color);
+}
+
+.light-gray {
+  background: var(--light-dark-color);
+}
+
+.mt-7 {
+  margin-top: 5rem;
+}
+
+/* Navigation bar*/
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+.nav-item {
+  margin-right: 1.3rem;
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: black;
+  border-bottom: 2px solid var(--primary-color);
+
+}
+
+.navbar ul li a{
+  font-family: 'Monteserrat', serif;
+}
+
+
+/* Section - Hero */
+
+#hero {
+  background: url('../img/pweetyImg.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  min-height: 550px;
+}
+
+#hero .overlay {
+  height: 80vh;
+  min-height: 550px;
+}
+
+#hero .hero-content {
+  min-height: 70%;
+  width: 100%;
+  align-items: center;
+}
+.hero-desc {
+  margin: 0 auto;
+}
+
+.hero-desc h1 {
+ font-size: 5rem;
+ font-weight: bolder;
+}
+.hero-desc {
+  font-size: 2rem;
+}
+.hero-desc a {
+  font-weight: bolder;
+}
+/***Counter**/
+
+.count {
+	display: flex;
+  flex-flow: row wrap;
+  background-image: url('../img/count.jpg');
+	justify-content: space-around;
+	align-items: center;
+ 	font-size: 10rem;
+  color: black;
+ 	width: 80%;
+   margin: 0 auto;
+   font-weight: bolder;
+}
+.stat{
+	flex:1;
+	margin-left: 8%;
+}
+.stat p {
+	font-size: 1.1rem;
+}
+
+/*********?
+
+
+/* Section - About Us */
+.wrapper {
+  width: 100;
+}
+
+#about-us {
+  background: var(--dark-color);
+  padding: 3rem 2rem;
+}
+
+.abtText {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#about-us .about-container,
+#rooms-suites .rooms-container {
+  height: 100%;
+}
+
+#about-us .about-img {
+  height: 500px;
+ /* background: url('../img/newAbtLg.svg') no-repeat center center/cover;*/
+  background-color: white;
+  width: 100%;
+  z-index: 11;
+  position:relative;
+}
+/* Section - About Us */
+
+/********* services *********/
+#serve {
+ background-image: url('../img/serve.jpg');
+ min-height: 506px;
+ background-color: #E5E5E5;
+
+}
+.mt-15 {
+  margin-top: 20rem;
+}
+.pt-7 {
+  padding-top: 7rem!important;
+}
+.provid {
+  margin-top: 10rem;
+}
+.vice {
+  padding-top: 4rem;
+}
+
+.fac {
+  min-height: 28rem;
+}
+
+#facilities {
+  padding-bottom: 3rem;
+  background-image: url('../img/testSvg.svg');
+  
+}
+.facilities-card {
+  position: relative;
+  
+}
+.mal {
+  margin-left: 10%;
+}
+.mab {
+  margin-right: 10%;
+}
+.pad {
+min-height: 20rem;
+padding-top: 12rem!important;
+}
+
+.facilities-card img {
+  height: 350px;
+  object-fit: cover;
+  margin: 0 auto;
+
+}
+.peeps {
+  position: absolute;
+  top: -50%;
+  margin: 0 auto;
+}
+/*
+#book-now {
+  width: 80%;
+}*/
+
+/* Section - Footer */
+
+#footer2{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0em;
+  background-color: var(--light-dark-color);
+  color: white;
+}
+
+#footer2 p{
+  margin-top: 26px;
+  font-family: 'Monteserrat', serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  text-align: center;
+  height: 100%;
+}
+
+#footer2 ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* margin-top: 29px; */
+}
+
+#footer2 ul a{
+  justify-content: space-between;
+  font-family: 'Monteserrat', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 16px;
+  padding: 0.75rem;
+  margin: 18px 4px;
+}
+
+#footer2 ul li a:last-of-type{
+  padding-right: 0;
+}
+
+/* ===================================================================================
+                              Facilities Page 
+=================================================================================== */
+
+/* Facilities page */
+
+
+
+/* Facilities intro section */
+
+/*Utility class*/
+.mt-10 {
+  margin-top: 7rem;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+
+/* Facilities image-gallery */
+
+
+/* ===================================================================================
+                              Responsiveness 
+=================================================================================== */
+
+@media(max-width: 768px) {
+  html {
+  margin-bottom: 0!important;
+ }
+
+ .sm-b {
+   margin-bottom: 14rem;
+ }
+
+ #hero {
+   background-color: white;
+ }
+
+
+  #hero .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+.count {
+  margin-top: -5rem;
+}
+  .about-img,
+  .rooms-img {
+    margin-top: 4rem;
+  }
+  #about-us .about-img {
+  height: 350px;
+ /* background: url('../img/newAbtLg.svg') no-repeat center center/cover; */
+  background-color: none;
+  width: 100%;
+  z-index: 11;
+  position:relative;
+}
+
+  .facility-wrap .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  #book-now {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer nav .navbar-brand {
+    margin-bottom: 2rem;
+  }
+
+  footer div div:last-child, footer nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .social-media a:first-child {
+    padding-left: 0;
+  }
+
+  
+  #footer2 p{
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
